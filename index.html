@@ -29,11 +29,22 @@
                 <br>
                 <text class="small-font">proudly js free</text>
                 <br>
-                <text class="small-font"><a href="#title" class="nodecorate">view source</a></text>
+                <text class="small-font"><a href="https://github.com/theokrueger-diesel-mods/website"
+                        class="nodecorate">view source</a></text>
             </span>
         </span>
         <!-- content -->
         <span>
+            <!-- mobile navbar -->
+            <div id="mobile" class="fob">
+                <a href="#home" class="mobilenav">home</a>
+                <a href="#mods" class="mobilenav">mods</a>
+                <a href="#guides" class="mobilenav">guides</a>
+                <a href="#about" class="mobilenav">about</a>
+                <a href="#support" class="mobilenav">support</a>
+                <a href="#contact" class="mobilenav">contact</a>
+            </div>
+            <!-- universal content -->
             <div id="home">
                 <text class="big-font">mercu's diesel mods</text>
                 <p class="normal-font" style="text-align: right; margin-bottom:0px;">anti-lua activist</p>
@@ -49,16 +60,17 @@
                         <p class="modtext nodecorate">flashlights for all!</p>
                     </a>
                     <span></span>
+                    <a href="#ahm" class="mod"><img class="modimg" align="middle"
+                            src="https://github.com/theokrueger-diesel-mods/pd2-anti-hidden-modlist/raw/master/thumbs/thumbnail.gif"
+                            alt="anti hidden modlist">
+                        <p class="modtext nodecorate">anti hidden modlist</p>
+                    </a>
+                    <span></span>
                     <a href="#cth" class="mod"><img class="modimg" align="middle"
                             src="https://github.com/theokrueger-diesel-mods/pd2-cableties-hostages/raw/master/thumbs/thumbnail.gif"
                             alt="cableties and hostages">
                         <p class="modtext nodecorate">cableties and hostages</p>
                     </a>
-                    <span></span>
-                    <a href="#ahm" class="mod"><img class="modimg" align="middle"
-                            src="https://github.com/theokrueger-diesel-mods/pd2-anti-hidden-modlist/raw/master/thumbs/thumbnail.gif"
-                            alt="anti-hidden modlist"></a>
-                    <span></span>
                 </span>
             </div>
             <div id="guides">
@@ -144,15 +156,189 @@
             </div>
         </span>
     </span>
+    <span id="mobile" style="height: 100px">
+        <div class="footer" style="width: 100%; text-align: center;">
+            <text class="small-font">(c) 2021 theo krueger</text>
+            |
+            <text class="small-font">proudly js free</text>
+            |
+            <text class="small-font"><a href="https://github.com/theokrueger-diesel-mods/website"
+                    class="nodecorate">view source</a></text>
+        </div>
+    </span>
     <!-- modal hell -->
+    <!-- anti hidden modlist -->
+    <div id="ahm" class="modal">
+        <a href="#"><span class="modalclickoff"></span></a>
+        <div class="modalscroll">
+            <text class="big-font">anti hidden modlist</text>
+            <p class="normal-font" style="text-align: right;">tells you when someone is hiding their modlist (sometimes)
+            </p>
+            <span class="modalcontentleft">
+                <img
+                    src="https://github.com/theokrueger-diesel-mods/pd2-anti-hidden-modlist/raw/master/thumbs/thumbnail.gif">
+                <span></span>
+                <text>
+                    <p>ever ran into somebody who appears to be running mods, but their modlist is empty? well luckily,
+                        we can sorta tell if they are hiding their list if they use beardlib! basically, if a cheater is
+                        running beardlib and hiding their modlist, this mod will let you know.</p>
+                    <p>If you are a cheater who hides their modlist, just remove beardlib to prevent this mod from
+                        catching you
+                        But there are other far more effective ways to catch you anyways, so maybe just dont cheat in a
+                        PvE game</p>
+                    <p><b>WORKS AS HOST ONLY</b></p>
+                    <ul>
+                        <li>you can make this work as a client by changing line 13 from
+                            <code>if channel_id == 4 and Net:IsHost() then</code> to
+                            <code>if channel_id == 4 then</code>
+                        </li>
+                        <li>no support will be provided for using this as a client<ul>
+                                <li>no support will be guaranteed to be provided for anything</li>
+                            </ul>
+                        </li>
+                        <li>if youre gonna cheat at least be smart about it</li>
+                    </ul>
+                </text>
+            </span>
+            <span>
+                <details>
+                    <summary><b>IMPORTANT NOTICE(S)</b></summary>
+                    <li>there are other better ways of doing this</li>
+                    <li>his code is awful since this is a proof of concept</li>
+                    <li>dont use any form of autokick, always manually review before kicking</li>
+                </details>
+                <details>
+                    <summary><b>KNOWN ISSUES</b></summary>
+                    <li>this mod is bad</li>
+                    <li>sometimes false errors</li>
+                    <li>this mod is poorly coded</li>
+                    <li>there is for sure a far better way to do this</li>
+                    <li>this will not trigger for all players, only those who send beardlib outfit strings which
+                        makes basically half the code redundant</li>
+                    <li>i hate lua</li>
+                </details>
+            </span>
+            <hr>
+            <span class="modaldownloadgrid">
+                <p>requires <a href="https://superblt.znix.xyz/" target="_blank">superblt</a>
+                    <br>
+                    features auto-updates
+                    <br>
+                    install to mods/
+                </p>
+                <span></span>
+                <a
+                    href="https://github.com/theokrueger-diesel-mods/pd2-flashlights-for-all/releases/latest/download/Flashlights.for.all.zip"><img
+                        src="img/buttons/ddl.svg"alt="download"></a>
+                <span></span>
+                <a href="https://github.com/theokrueger-diesel-mods/pd2-flashlights-for-all" target="_blank"><img
+                        src="img/buttons/repo.svg"alt="repo"></a>
+                <span></span>
+                <a href="https://modworkshop.net/mod/32694" target="_blank"><img
+                        src="img/buttons/mws.svg" alt="modworkshop"></a>
+            </span>
+        </div>
+    </div>
+    <!-- cableties and hostages -->
+    <div id="cth" class="modal">
+        <a href="#"><span class="modalclickoff"></span></a>
+        <div class="modalscroll">
+            <text class="big-font">cableties and hostages</text>
+            <p class="normal-font" style="text-align: right;">gives infinite cable ties and more following hostages in
+                self-hosted games</p>
+            <span class="modalcontentleft">
+                <img
+                    src="https://github.com/theokrueger-diesel-mods/pd2-cableties-hostages/raw/master/thumbs/prev3.jpg">
+                <span></span>
+                <text>
+                    This mod will give you access to a much greater supply of cable ties and allows you to have a
+                    greater number of following hostages.
+                    <br>
+                    This mod also allows you to set the movement speed of following hostages (default 1.3x).
+                    <br>
+                    <br>
+                    <b>You need the Forced Friendship basic skill for increased cable ties to work</b>
+                    <br>
+                    <br>
+                    This mod works as <b>host only</b> and will announce itself to those who connect to your lobby (can
+                    be
+                    disabled for friends-only or private games).
+                    <br>
+                    Restart heist for settings to take effect.
+
+                </text>
+            </span>
+            <span class="modalcontentright">
+                <text>
+                    <b>frequently asked questions</b>
+                    <br>
+                    <b>q:</b> Will this mark me as a cheater?
+                    <br>
+                    A: No, it will not. But people might question why you have 52 cable ties in your inventory, so it
+                    announces it in chat and only works as a host.
+                    <br>
+                    This setting can be turned off, but be warned it may lead to unhappy players.
+                    <br>
+                    <br>
+
+                    **Q: Can this work if I'm not hosting?**
+
+                    A: This mod does not work if you aren't hosting. There are other mods out there that will give you
+                    extra cable ties while you *aren't* hosting,
+                    but no mod can allow you additional hostage followers or increase their movement speed as a client.
+
+                    **Q: Why did you make this mod if alternatives exist**
+
+                    A: This mod provides customizability and an all-in-one 'solution' to the unnecessary challenge of
+                    clean gameplay
+
+                    **Q: Can I turn off the announce feature so others don't have to see I'm using this mod?**
+
+                    A: As of update 1.2, you can turn the announce feature off in Mod Options -&gt; Cable Ties and
+                    Hostages
+                    This will **ONLY** disable announcements in friends-only or private games.
+                    It was a joint-decision between me and the modteam to change this.
+
+                    **Q: Can this mod integrate *feature* in a future update?**
+
+                    A: Put a request in the comments, or better yet add it yourself and submit a pull request in the
+                    <a href="https://github.com/theokrueger-diesel-mods/pd2-cableties-hostages" target="_blank">GitHub
+                        Repo</a>!</p>
+                </text>
+                <span></span>
+                <img
+                    src="https://github.com/theokrueger-diesel-mods/pd2-cableties-hostages/raw/master/thumbs/prev2.jpg">
+            </span>
+            <hr>
+            <span class="modaldownloadgrid">
+                <p>requires <a href="https://superblt.znix.xyz/" target="_blank">superblt</a>
+                    <br>
+                    features auto-updates
+                    <br>
+                    install to mods/
+                </p>
+                <span></span>
+                <a
+                    href="https://github.com/theokrueger-diesel-mods/pd2-flashlights-for-all/releases/latest/download/Flashlights.for.all.zip"><img
+                        src="img/buttons/ddl.svg"alt="download"></a>
+                <span></span>
+                <a href="https://github.com/theokrueger-diesel-mods/pd2-flashlights-for-all" target="_blank"><img
+                        src="img/buttons/repo.svg"alt="repo"></a>
+                <span></span>
+                <a href="https://modworkshop.net/mod/32694" target="_blank"><img
+                        src="img/buttons/mws.svg" alt="modworkshop"></a>
+            </span>
+        </div>
+    </div>
+    <!-- flashlights for all -->
     <div id="ffa" class="modal">
         <a href="#"><span class="modalclickoff"></span></a>
-        <div>
+        <div class="modalscroll">
             <text class="big-font">flashlights for all!</text>
             <p class="normal-font" style="text-align: right;">gives every weapon a flashlight and
                 laser free of stats and charge</p>
             <span class="modalcontentleft">
-                <video playsinline autoplay muted loop>
+                <video playsinline autoplay muted loop style="width: 100%;">
                     <source
                         src="https://github.com/theokrueger-diesel-mods/pd2-flashlights-for-all/raw/master/thumbs/demo.webm"
                         type="video/webm">
@@ -165,59 +351,31 @@
                         applied to new weapons. any applied gadget will overwrite the default attachment.</p>
                     <p>works exactly the same as normal lasers and flashlights</p>
                     <p>if you wish to change the laser or flashlight colour, use a mod like <a
-                            href="https://modworkshop.net/mod/20577">lasers+</a></p>
+                            href="https://modworkshop.net/mod/20577" target="_blank">lasers+</a></p>
                 </text>
             </span>
+            <hr>
             <span class="modaldownloadgrid">
+                <p>requires <a href="https://superblt.znix.xyz/" target="_blank">superblt</a>
+                    <br>
+                    features auto-updates
+                    <br>
+                    install to mods/
+                </p>
                 <span></span>
                 <a
                     href="https://github.com/theokrueger-diesel-mods/pd2-flashlights-for-all/releases/latest/download/Flashlights.for.all.zip"><img
-                        src="img/buttons/ddl.svg">download</a>
+                        src="img/buttons/ddl.svg" alt="download"></a>
                 <span></span>
-                <a href="https://github.com/theokrueger-diesel-mods/pd2-flashlights-for-all"><img
-                        src="img/buttons/repo.svg">repo</a>
+                <a href="https://github.com/theokrueger-diesel-mods/pd2-flashlights-for-all" target="_blank"><img
+                        src="img/buttons/repo.svg" alt="repo"></a>
                 <span></span>
-                <a href="https://modworkshop.net/mod/32694  "><img src="img/buttons/mws.svg">modworkshop</a>
+                <a href="https://modworkshop.net/mod/32694" target="_blank"><img src="img/buttons/mws.svg"
+                        alt="modworkshop"></a>
             </span>
         </div>
     </div>
-    <div id="cth" class="modal">
-        <a href="#"><span class="modalclickoff"></span></a>
-        <div>
-            <text class="big-font">cableties and hostages</text>
-            <p class="normal-font" style="text-align: right;">gives large amounts of cable ties and 3 following hostages in self-hosted games</p>
-            <span class="modalcontentleft">
-                <img stc="img/buttons/ddl.svg">
-                <span></span>
-                <text>
-                    <p><b>automatically</b> gives every weapon a statless flashlight and laser.</p>
-                    <p>to apply this gadget to existing weapons, add then remove a gadget. it will be automatically
-                        applied to new weapons. any applied gadget will overwrite the default attachment.</p>
-                    <p>works exactly the same as normal lasers and flashlights</p>
-                    <p>if you wish to change the laser or flashlight colour, use a mod like <a
-                            href="https://modworkshop.net/mod/20577">lasers+</a></p>
-                </text>
-            </span>
-            <span class="modaldownloadgrid">
-                <span></span>
-                <a
-                    href="https://github.com/theokrueger-diesel-mods/pd2-flashlights-for-all/releases/latest/download/Flashlights.for.all.zip"><img
-                        src="img/buttons/ddl.svg">download</a>
-                <span></span>
-                <a href="https://github.com/theokrueger-diesel-mods/pd2-flashlights-for-all"><img
-                        src="img/buttons/repo.svg">repo</a>
-                <span></span>
-                <a href="https://modworkshop.net/mod/32694  "><img src="img/buttons/mws.svg">modworkshop</a>
-            </span>
-        </div>
-    </div>
-    <div id="ahm" class="modal">
-        <a href="#"><span class="modalclickoff"></span></a>
-        <div>
-            <h2>This is a AHM modal window</h2>
-            <p>This is a sample modal window that can be created using CSS3 and HTML5.</p>
-        </div>
-    </div>
+    <!-- end modal hell -->
 </body>
 
 </html>
