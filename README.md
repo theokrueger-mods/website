@@ -3,3 +3,5 @@
 website showcasing my diesel mods
 
 javascript free because im cool
+
+i dont know anything about web design
