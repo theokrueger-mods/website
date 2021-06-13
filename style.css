@@ -126,7 +126,7 @@ code {
 .modaldownloadgrid {
     text-align: left;
     display: grid;
-    grid-template-columns: 15% 50% 10% 2.5% 10% 2.5% 10%;
+    grid-template-columns: 65% 10% 2.5% 10% 2.5% 10%;
     background-color: #00000000;
     padding-bottom: 10px;
 }
