@@ -22,6 +22,11 @@ details {
     transition: 0.2s;
 }
 
+code {
+    background-color: #0000001F;
+    white-space: pre;
+}
+
 /* fonts */
 
 .big-font {
@@ -100,7 +105,7 @@ details {
 .modgrid {
     align-items: center;
     display: grid;
-    grid-template-columns: auto 25% auto 25% auto 25% auto;
+    grid-template-columns: auto 25% auto 25% auto 25% auto 25% auto;
     background-color: #00000000;
 }
 
