@@ -30,7 +30,7 @@ code {
 /* fonts */
 
 .big-font {
-    font-size: 500% !important;
+    font-size: 500%;
 }
 
 .mediumer-font {
@@ -57,25 +57,27 @@ code {
     text-align: center;
 }
 
-/* mods */
+/* tiles */
 
-.mod {
+.tile {
     transition: 0.2s;
     margin: auto;
     width: 90%;
 }
 
-.mod:hover {
+.tile:hover {
     width: 100%;
 }
 
-.modimg {
+.tileimg {
     width: 90%;
 }
 
-.modtext {
+.tiletext {
     text-align: center;
     padding-right: 10%;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 /* grid */
@@ -94,15 +96,21 @@ code {
     padding: 0px;
 }
 
-.thirteengrid {
+.contactgrid {
     align-items: center;
+    text-align: center;
     display: grid;
-    grid-template-columns: auto 10% auto 10% auto 10% auto 10% auto 10% auto 10% auto;
+    grid-template-columns: auto 15% auto 15% auto 15% auto 15% auto;
     background-color: #00000000;
     padding: 0px;
 }
 
-.modgrid {
+.contactimg {
+    max-height: 96px;
+    max-width: 96px;
+}
+
+.prevgrid {
     align-items: center;
     display: grid;
     grid-template-columns: auto 25% auto 25% auto 25% auto 25% auto;
@@ -210,6 +218,10 @@ code {
     text-decoration: none;
 }
 
+.nobmargin {
+    margin-bottom: 0px;
+}
+
 /* modal hell */
 
 /* https://tutorialspage.com/create-modal-window-pure-html5-css3/ */
@@ -268,7 +280,8 @@ code {
     display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
+    /* why must i make this so godawful */
     #pc {
         display: none;
     }
@@ -284,27 +297,29 @@ code {
     .modalcontentright {
         display: block;
     }
+    .fourgrid {
+        grid-template-columns: auto auto;
+    }
+    .big-font {
+        font-size: 350% !important;
+    }
 }
 
 .mobilenav {
     text-decoration: none;
     color: #000;
-    background-color: #cfcfcf;
+    background-color: #00000000;
     padding: 5px;
 }
 
 .mobilenav:hover {
-    background-color: #00000000;
+    background-color: #0F0F0F0F;
 }
 
 .fob {
     text-align: center;
     position: fixed;
     padding: 10px 5px 10px 5px;
-    bottom: 0;
-    margin-left: 25%;
-    margin-right: 25%;
-    width: 50%;
-    /* Height of the footer*/
-    height: auto;
+    bottom: 0%;
+    right: 5%;
 }
