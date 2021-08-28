@@ -63,10 +63,13 @@ code {
     transition: 0.2s;
     margin: auto;
     width: 90%;
+    padding-top: 5%;
 }
 
 .tile:hover {
     width: 100%;
+    padding-top: 0%;
+    padding-bottom: 0%;
 }
 
 .tileimg {
@@ -113,7 +116,7 @@ code {
 .prevgrid {
     align-items: center;
     display: grid;
-    grid-template-columns: auto 25% auto 25% auto 25% auto 25% auto;
+    grid-template-columns: 25% 25% 25% 25%;
     background-color: #00000000;
 }
 
@@ -184,16 +187,16 @@ code {
 
 /* sidebar entry expansion */
 
-.expand-mods {
+.sidebarbutton {
     display: block;
 }
 
-.mods-entry {
+.sidebarentry {
     height: 0px;
     transition: 0.5s;
 }
 
-.expand-mods:hover .mods-entry {
+.sidebarbutton:hover .sidebarentry {
     display: block;
     height: 40px;
 }
@@ -203,7 +206,7 @@ code {
     color: #FFFFFF00
 }
 
-.expand-mods:hover .modstext {
+.sidebarbutton:hover .modstext {
     color: #000000FF;
 }
 
@@ -222,53 +225,6 @@ code {
     margin-bottom: 0px;
 }
 
-/* modal hell */
-
-/* https://tutorialspage.com/create-modal-window-pure-html5-css3/ */
-
-.modal {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-    background: #FFFFFF5F;
-    opacity: 0;
-    pointer-events: none;
-    border-style: none;
-}
-
-.modal:target {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.modal>div {
-    min-width: 10px;
-    position: relative;
-    left: 15%;
-    right: 15%;
-    top: 15%;
-    width: 70%;
-    background: #fff;
-}
-
-.modalscroll {
-    height: 50%;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-/* https://stackoverflow.com/questions/18588835/allow-a-div-to-cover-the-whole-page-instead-of-the-area-within-the-container */
-
-.modalclickoff {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.5);
-}
 
 /* mobile "support" */
 
@@ -301,7 +257,16 @@ code {
         grid-template-columns: auto auto;
     }
     .big-font {
-        font-size: 350% !important;
+        font-size: 350%;
+    }
+    .prevgrid {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .big-font {
+        font-size: 300% !important;
     }
 }
 

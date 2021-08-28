@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>theokrueger.dev/mods</title>
+    <meta charset="utf-8">
+    <meta name="description" content="bad website for dumb people">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <span class="maingrid">
+        <!-- sidebar -->
+        <span id="pc">
+            <ul class="sidebar fixed">
+                <li class="sidebarbutton">
+                    <a href="home" class="sidebar-entry">home</a>
+                    <ul class="sidebarentry"><a href="home#mods" class="sidebar-entry small-font modstext">recent mods</a></ul>
+                    <ul class="sidebarentry"><a href="home#guides" class="sidebar-entry small-font modstext">recent guides</a></ul>
+                    <ul class="sidebarentry"><a href="home#about" class="sidebar-entry small-font modstext">about</a></ul>
+                    <ul class="sidebarentry"><a href="home#contact" class="sidebar-entry small-font modstext">contact</a></ul>
+                </li>
+                <li class="sidebarbutton">
+                    <a href="mods" class="sidebar-entry">mods</a>
+                </li>
+                <li class="sidebarbutton">
+                    <a href="guides" class="sidebar-entry">guides</a>
+                </li>
+            </ul>
+            <span class="footer fixed" style="width: auto; padding-right: 5px;">
+                <text class="small-font">(c) theo krueger</text>
+                <br>
+                <text class="small-font"><a href="https://github.com/theokrueger-diesel-mods/website" class="nodecorate">view source</a></text>
+            </span>
+        </span>
+        <!-- content -->
+        <span>
+            <!-- mobile navbar -->
+            <div id="mobile" class="fob" align="center">
+                <a href="home" class="mobilenav">home</a>
+                <a href="mods" class="mobilenav">mods</a>
+                <a href="guides" class="mobilenav">guides</a>
+            </div>
+            <!-- home -->
+            <div id="home">
+                <text class="big-font">theokrueger.dev/mods</text>
+                <p class="normal-font nobmargin" style="text-align: right;">anti lua activist</p>
+            </div>
+        </span>
+    </span>
+    <span id="mobile" style="height: 1000px; padding-right: 10px;">
+        <div class="footer" style="width: 100%; text-align: center;">
+            <text class="small-font">(c) theo krueger | <a href="https://github.com/theokrueger/website" class="nodecorate">view source</a></text>
+        </div>
+    </span>
+    <text id="mobile">what are you doing?</text>
+</body>
+
+</html>
